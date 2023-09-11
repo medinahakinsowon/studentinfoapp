@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
+import Inputpanel from './components/Inputpanel';
+import Buildstudentapi from './components/Build-student-api';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+
+const router = createBrowserRouter([
+
+  {
+    path: "/",
+    element: <Navbar />,
+    children: [
+      {
+        path: "/inputpanel",
+        element: <Inputpanel />
+      },
+      {
+        path: "/build-student-api",
+        element: <Buildstudentapi />
+      }
+    ]
+  }
+    ])   
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{height: '100vh', backgroundColor:'#9e9e9e'}}>
+        <RouterProvider router={router} />
     </div>
   );
 }
