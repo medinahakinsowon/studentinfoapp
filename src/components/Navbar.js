@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="navbar bg-body-tertiary">
         <div className="container">
           <a className="navbar-brand" href="#">
-            <img src={Logo} alt="Bootstrap" width="85" height="85" />
+            <img src={Logo} alt="Schoollogo" width="85" height="85" />
           </a>
           <Link to="/inputpanel" className='link-underline-primary' style={{fontFamily: 'Arial', fontSize: '24px', fontWeight: 'bold', color: 'black'}}>Input-Student-Info</Link>
           <Link to="/build-student-api" className='link-underline-primary' style={{fontFamily: 'Arial', fontSize: '24px', fontWeight: 'bold', color: 'black'}}>View-Students-Information</Link>

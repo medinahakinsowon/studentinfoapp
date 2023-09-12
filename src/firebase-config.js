@@ -1,6 +1,5 @@
 
-import { initializeApp } from "firebase/app";
-import {getFirestore} from "@firebase/firestore";
+
 import firebase from 'firebase/compat/app'
 import {getDatabase} from 'firebase/database';
 
@@ -20,8 +19,5 @@ if(firebase.apps.length === 0){
 }
  
 const db = getDatabase()
-// const app = initializeApp(firebaseConfig)
-
-// const db = getFirestore(app)
 
 export {db}

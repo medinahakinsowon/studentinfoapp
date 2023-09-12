@@ -12,11 +12,12 @@ const Buildstudentapi = ()=>{
       const starRefcount = ref(db, 'students/');
       onValue(starRefcount, (snapshot)=>{
         const data = snapshot.val();
+        console.log(data) //object
         const newInfo = Object.keys(data).map(key =>({
           id:key,
           ...data[key]
         }));
-        console.log(newInfo)
+        console.log(newInfo)//array
         setStudents(newInfo)
       })
   }, []);

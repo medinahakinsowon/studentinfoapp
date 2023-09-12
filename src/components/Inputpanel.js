@@ -59,14 +59,6 @@ const Students = () => {
 
   }
 
-
-
-  // const handleInput = (e)=>{
-  //     setFirstname(e.target.value)
-  //     setLastname(e.target.value)
-  //     setSurName(e.target.value)
-  //     setAge(e.target.value)
-  // }
   return (
     <div className="">
 

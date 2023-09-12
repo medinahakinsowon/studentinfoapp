@@ -3,8 +3,8 @@
 const Sidebar = ({ students }) => {
   return (
     <div className="container">
-      <h3 className="text-center mt-3 mb-3">Student Database</h3>
-      <table className="table">
+      <h3 className="text-center-primary mt-3 mb-3 fw-bold">Student Database</h3>
+      <table className="table table-bordered border-primary table-striped">
         <thead>
           <tr>
             <div className="row">
